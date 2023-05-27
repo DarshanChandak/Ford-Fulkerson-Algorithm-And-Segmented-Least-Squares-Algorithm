@@ -1,4 +1,3 @@
-Darshan Chandak 2020A7PS2085H
-Abhinav Verma 2020A7PS1093H
-Anupam Singh 2020A7PS0203H
-Sahil Bhore 2020A7PS2065H
+**A Assignment under CS F364 - Design and Analysis of Algorithms Course**
+
+Implemented a Ford Fulkerson Algorithm for Max Flow-Min Cut Problem in Network Flow and Segmented Least Squares Algorithm for Line Fitting Problem.
