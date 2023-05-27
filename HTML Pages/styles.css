@@ -1,0 +1,51 @@
+.row {
+    Width: 100%;
+}
+
+.column {
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+@media (min-width: 48em) {
+    .column {
+        width: 33%;
+        float: left;
+    }
+
+    .column2 {
+        width: 50%;
+        float: left;
+    }
+
+    .row {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

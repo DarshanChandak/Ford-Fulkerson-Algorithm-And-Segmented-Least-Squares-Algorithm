@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Timing Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <center>
+        <h1>Part-1</h1>
+    </center>
+    <hr>
+    <hr>
+
+    <p>
+        <b>Max-Flow Min-Cut Theorem:</b>
+        <br>
+        The max-flow min-cut theorem states that the maximum flow through any network from a given source to a given
+        sink is exactly equal to the minimum sum of a cut.
+        <br>
+        This theorem can be verified using the Ford-Fulkerson algorithm.
+        It finds the maximum flow of a network or graph.
+        <br>
+        <br>
+
+        <b>The Ford-Fulkerson Algorithm:</b>
+        <br>
+        The Ford-Fulkerson algorithm is based on the three important concepts: <b>the residual network</b>, <b>augmented
+            path</b> and
+        <b>cut</b>.
+        <br>
+        Residual Graph of a flow network is a graph which indicates additional possible flow.
+        <br>Every edge of a residual graph has a value called residual capacity which is equal to original capacity of
+        the edge minus current flow.
+        <br>An augmenting path p is a simple path from source node S to sink node P in the residual network G_f.
+        <br>
+        <br>
+
+        <b>Timing Analysis:</b>
+        <br>Algorithm's overall time complexity is O(f' * E').
+        <br>Where, E' is the number of edges in the residual graph G_f.
+        <br>f' is the maximum flow value.
+
+    </p>
+
+    <hr>
+    <hr>
+
+    <h2>Experimental Results</h2>
+    <hr>
+
+    <div class="row">
+        <div class="column">
+            <h2><b>Test Case - 1 : Original Graph</b></h2>
+            <p>
+                <img src="TC/Part1/TC1_1.png" width=" 40%" height="400" alt="TestCase 1" class="center">
+            </p>
+            <p>
+                Number of Nodes: 8
+                <br>
+                Number of Edges: 15
+                <br>
+                Source: 0
+                <br>
+                Sink: 7
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Max Flow Min Cut Graph</b></h2>
+            <p>
+                <img src="TC/Part1/TC1_2.png" width=" 40%" height="400" alt="TestCase 1" class="center">
+            </p>
+            <p>
+                Max Flow = 28
+                <br>Nodes reachable from source : 0 2 3 6
+                <br>Nodes not reachable from source : 1 4 5 7 8
+                <br>Elapsed Time: 0.002999s
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Bipartite Matching</b></h2>
+            <p>
+                <img src="TC/Part1/TC1_3.png" width=" 40%" height="400" alt="TestCase 1" class="center">
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="column">
+            <h2><b>Test Case - 2 : Original Graph</b></h2>
+            <p>
+                <img src="TC/Part1/TC2_1.png" width=" 40%" height="400" alt="TestCase 2" class="center">
+            </p>
+            <p>
+                Number of Nodes: 6
+                <br>
+                Number of Edges: 8
+                <br>
+                Source: 0
+                <br>
+                Sink: 5
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Max Flow Min Cut Graph</b></h2>
+            <p>
+                <img src="TC/Part1/TC2_2.png" width=" 40%" height="400" alt="TestCase 2" class="center">
+            </p>
+            <p>
+                Max Flow = 25
+                <br>Nodes reachable from source : 0
+                <br>Nodes not reachable from source : 1 2 3 4 5 6
+                <br>Elapsed Time: 0.005s
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Bipartite Matching</b></h2>
+            <p>
+                <img src="TC/Part1/TC2_3.png" width=" 40%" height="400" alt="TestCase 1" class="center">
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="column">
+            <h2><b>Test Case - 3 : Original Graph</b></h2>
+            <p>
+                <img src="TC/Part1/TC3_1.png" width=" 40%" height="400" alt="TestCase 3" class="center">
+            </p>
+            <p>
+                Number of Nodes: 8
+                <br>
+                Number of Vertices: 12
+                <br>
+                Source: 0
+                <br>
+                Sink: 7
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Max Flow Min Cut Graph</b></h2>
+            <p>
+                <img src="TC/Part1/TC3_2.png" width=" 40%" height="400" alt="TestCase 3" class="center">
+            </p>
+            <p>
+                Max Flow = 3
+                <br>Nodes reachable from source : 0
+                <br>Nodes not reachable from source : 1 2 3 4 5 6 7 8
+                <br>Elapsed Time: 0.011999s
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Bipartite Matching</b></h2>
+            <p>
+                <img src="TC/Part1/TC3_3.png" width=" 40%" height="400" alt="TestCase 1" class="center">
+            </p>
+        </div>
+    </div>
+    <hr>
+    <hr>
+
+    <h2 class="center2">
+        <b>Graph of Time Elapsed vs Number of Edges in the Network</b>
+    </h2>
+    <p>
+        <img src="TC/Part1/graph.png" alt="Decomposition" width="60%" height="500">
+    </p>
+    <hr>
+
+
+
+
+    <center>
+        <h1>Part-2</h1>
+    </center>
+    <hr>
+    <hr>
+
+    <p>
+        <b>Segmented Least Squares Problem:</b>
+        <br>
+        The least squares problem is described as follows:
+        <br>Given n points in the plane: (x1, y1), (x2, y2)...(xn, yn),
+        find a line y = ax + b that minimizes the sum of squared errors
+        <br>
+    <div class="row">
+        <div class="column2">
+            <h3><b>Line Fitting</b></h3>
+            <p>
+                <img src="TC/Part2/line_fitting.png" width=" 40%" height="400" alt="Line Fitting" class="center">
+            </p>
+        </div>
+
+        <div class="column2">
+            <h3><b>Sum of Squares of Errors</b></h3>
+            <p>
+                <img src="TC/Part2/SSE.png" width=" 40%" height="200" alt="SSE" class="center">
+            </p>
+
+            <p>
+                <b>Timing Analysis:</b>
+                <br>Algorithm's overall time complexity is: O(n^3).
+                <br>Where, n is the total number of points.
+            </p>
+        </div>
+    </div>
+    </p>
+
+    <hr>
+    <hr>
+
+    <h2>Experimental Results</h2>
+    <hr>
+
+    <div class="row">
+        <div class="column">
+            <h2><b>Test Case - 1 :</b></h2>
+            <p>
+                <img src="TC/Part2/TC1.png" width=" 40%" height="400" alt="TestCase 1" class="center">
+            </p>
+            <p>
+                <br>Elapsed Time: 0.001997s
+                <br>Number of points: 12
+                <br>Cost: 3.86324951919906
+                <br> SSE VALUE: 12.9137
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Test Case - 2 :</b></h2>
+            <p>
+                <img src="TC/Part2/TC2.png" width=" 40%" height="400" alt="TestCase 2" class="center">
+            </p>
+            <p>
+                <br>Elapsed Time: 190.706s
+                <br>Number of points: 2440
+                <br>Cost: 33
+                <br>SSE VALUE: 316.726
+            </p>
+        </div>
+
+        <div class="column">
+            <h2><b>Test Case - 3 :</b></h2>
+            <p>
+                <img src="TC/Part2/TC3.png" width=" 40%" height="400" alt="TestCase 3" class="center">
+            </p>
+            <p>
+                <br>Elapsed Time: 0.003s
+                <br>Number of points: 27
+                <br>Cost: 37.59281911609035
+                <br>SSE VALUE: 316.726
+            </p>
+        </div>
+    </div>
+    <hr>
+
+
+</body>
+
+</html>
